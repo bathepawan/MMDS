@@ -1,0 +1,82 @@
+This is submission for Programming Assignment for the subject Mining of Massive Dataset.
+
+This is directory structure
+
+├── CS18M519\ Report.pdf - Report for assignment
+├── Code
+│   ├── __init__.py
+│   ├── common
+│   │   ├── __init__.py
+│   │   └── config.py                   --> contains some common variables used across all questions.
+│   ├── q1
+│   │   ├── __init__.py
+│   │   ├── run.py                      --> entry point for question 1
+│   │   └── synthetic_data_creation.py  --> implementation of desire things in question 1
+│   ├── q2
+│   │   ├── __init__.py
+│   │   ├── coeffs.csv                  --> coefficients generated from question 2
+│   │   ├── linear_classification.py    --> implementation of desire things in question 2
+│   │   └── run.py                      --> entry point for question 2
+│   ├── q3
+│   │   ├── __init__.py
+│   │   ├── knn_classification.py       --> implementation of desire things in question 3
+│   │   └── run.py                      --> entry point for question 3
+│   ├── q4
+│   │   ├── __init__.py
+│   │   ├── data_imputer.py             --> implementation of desire things in question 4
+│   │   └── run.py                      --> entry point for question 4
+│   ├── q5
+│   │   ├── coeffs.csv                  --> coefficients generated from question 5
+│   │   ├── linear_regressor.py         --> implementation of desire things in question 5
+│   │   └── run.py                      --> entry point for question 5
+│   ├── q6
+│   │   ├── coeffs-lamda1.csv           --> coefficients generated from question 6, for first lambda value
+│   │   ├── coeffs-lamda2.csv           --> coefficients generated from question 6, for second lambda value
+│   │   ├── coeffs-lamda3.csv           --> coefficients generated from question 6, for third lambda value
+│   │   ├── coeffs-lamda4.csv           --> coefficients generated from question 6, for fourth lambda value
+│   │   ├── reduced_linear_regressor.py --> implementation of desire things in question 6
+│   │   ├── regularized_linear_regressor.py
+│   │   └── run.py                      --> entry point for question 6
+│   └── q7
+│       ├── logistic_regressor.py       --> implementation of desire things in question 7
+│       └── run.py                      --> entry point for question 7
+├── Dataset                             --> Dataset directory
+│   ├── CandC-Imputed_interpolate.csv
+│   ├── CandC-Imputed_mean.csv
+│   ├── CandC-test1.csv
+│   ├── CandC-test2.csv
+│   ├── CandC-test3.csv
+│   ├── CandC-test4.csv
+│   ├── CandC-test5.csv
+│   ├── CandC-train1.csv
+│   ├── CandC-train2.csv
+│   ├── CandC-train3.csv
+│   ├── CandC-train4.csv
+│   ├── CandC-train5.csv
+│   ├── DS1-test.csv
+│   ├── DS1-train.csv
+│   ├── DS2-test.csv
+│   ├── DS2-train.csv
+│   ├── communities.data
+│   └── communities.names
+├── README                             -->README file
+└── __init__.py
+
+
+How to run:
+
+Note: This assumes you have python 3.x installed and python launcher is accessible using command python,
+ please modify the commands as necessary in case you are having python launcher command different. eg py -3
+
+Note: We are also assuming the scripts folder of python installation is added into env variable,
+if it is not please add it, else newly added modules may not be able to import in code.
+
+1. Install the dependencies using
+cd CS18M519_PA1a
+pip install -r requirements.txt
+
+2. Go to individual questions folder and run run.py
+eg.
+cd q1
+python run.py
+

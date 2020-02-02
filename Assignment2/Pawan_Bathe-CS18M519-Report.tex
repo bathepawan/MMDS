@@ -1,0 +1,84 @@
+\documentclass[addpoints,12pt]{exam}
+\printanswers
+\usepackage{amsmath,amssymb,complexity,amsthm}
+\usepackage{graphicx}
+\usepackage[linesnumbered]{algorithm2e}
+\usepackage{mathtools}
+\usepackage{tkz-graph}
+\DeclareMathOperator*{\argmin}{argmin}  
+
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{titling}
+\usepackage{multicol}
+\usepackage{pgfplots} 
+\usepackage{physics}
+\pgfplotsset{width=10cm,compat=1.9} 
+\usepgfplotslibrary{external}
+\tikzexternalize
+\pointpoints{mark}{marks}
+\renewcommand{\solutiontitle}{\noindent\textbf{}\par\noindent}
+
+\addtolength{\oddsidemargin}{-.5in}
+\addtolength{\textwidth}{.8in}
+\addtolength{\topmargin}{-0.25 in}
+\addtolength{\textheight}{0.4in}
+\title{CS6745: Mining Massive DataSets}
+\author{\large \textbf{Assignemnt 2 Report} }
+
+\begin{document}
+
+%\vspace{-7cm}
+\vspace{1.5mm} Name : Pawan Bathe \hspace{8cm} Roll No.:CS18M519 \tabuarnewline \vspace{1.5mm} \hline
+\vspace{2mm}
+\begin{center}
+{\Large \thetitle\\}
+\vspace{2mm}
+{\large \theauthor\\}
+\vspace{2mm}
+{\large \thedate}
+\end{center}
+% \maketitle
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{questions}
+
+    \question How does the jaccard similarity estimated using minhashing vary when the number of rows is varied?
+
+\begin{solution}
+
+Jaccard similarity estimated using minhashing decreases when numbers of rows are increased. 
+
+\end{solution}
+
+\vspace{3mm}
+
+\question How much do the calculated jaccard similarity and the estimated similarity vary?
+\begin{solution}
+
+Calculated  jaccard similarity and the estimated similarity  do not vary much, they are nearly equal. 
+
+\end{solution}
+
+\question How does the performance of LSH compare to brute-force, with respect to average similarity and running time?
+\begin{solution}
+Average similarity of brute force approach is better.
+Also LHS  running time is more than brute force approach.
+Time increase when number of permutations are increased.  
+
+\end{solution}
+
+\vspace{3mm}
+
+\question How does this vary with dataset size, k, r, and number of rows in signature matrix?
+
+\begin{solution}
+Running time increases with increase in dataset size, k, r and number of rows in signature matrix.
+Average similarity decreases with increase n dataset size, k, r and number of rows in signature matrix.
+
+\end{solution}
+\end{questions}
+\end{document}
