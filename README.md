@@ -1,2 +1,2 @@
 # MMDS
-Mining of Massive Datasets-  CS6745 - Assignmens
+Mining of Massive Datasets-  CS6745 - Assignments
